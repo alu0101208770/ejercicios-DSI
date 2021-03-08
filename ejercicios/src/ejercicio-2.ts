@@ -1,4 +1,5 @@
 type ResultType = string[];
+type Result = 'perfecto' | 'abundante' | 'deficiente' | 'undefined';
 
 function searchFactors(numero: number) : number[] {
   let array_factors: number[] = [];
@@ -10,7 +11,7 @@ function searchFactors(numero: number) : number[] {
   return array_factors;
 }
 
-function performNichomachusClassification(arr: number[]) : ResultType{
+export function performNichomachusClassification(arr: number[]) : ResultType{
   let array_result: ResultType = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] <= 0) {
@@ -26,7 +27,7 @@ function performNichomachusClassification(arr: number[]) : ResultType{
       array_result.push('deficiente');
     }
   }
-  console.log(`Los números [${arr}] son respectivamente: `)
+  //console.log(`Los números [${arr}] son respectivamente: `)
   return array_result;
 } 
 

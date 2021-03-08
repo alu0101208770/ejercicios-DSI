@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.performNichomachusClassification = void 0;
 function searchFactors(numero) {
     let array_factors = [];
     for (let i = 0; i < numero; i++) {
@@ -27,4 +30,5 @@ function performNichomachusClassification(arr) {
     console.log(`Los números [${arr}] son respectivamente: `);
     return array_result;
 }
+exports.performNichomachusClassification = performNichomachusClassification;
 console.log(performNichomachusClassification([6, 28, 12, 24, 8]));
